@@ -54,4 +54,13 @@ npm install --save-dev typescript ts-node-dev @types/node @types/express
 
 ---
 
+ 
+## Endpoints
+
+Cadastrar
+Listar
+Atualizar
+Deletar
+
+
 
