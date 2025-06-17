@@ -1,8 +1,25 @@
-## Requisitos
+# 📚 Biblioteca API - Projeto Pós Tech
+<br/>
+API RESTful desenvolvida com **Node.js + TypeScript** para gerenciamento de livros em uma biblioteca, utilizando o **Firebase Firestore** como banco de dados.
+
+## ✅ Requisitos
 
 * Node.js 24 ou superior
+* Conta no Firebase
+* Chave de serviço gerada pelo Firebase
+* Ferramenta de testes de API (usei o https://curlbuilder.com/)
 
-## Como criar o projeto
+
+## ⚙️ Tecnologias usadas
+
+* Node.js
+* TypeScript
+* Express
+* Firebase Admin SDK (Firestore)
+* Dotenv
+
+
+## 🛠️ Como criar o projeto
 
 Criar o arquivo package.
 ```
@@ -55,12 +72,15 @@ npm install --save-dev typescript ts-node-dev @types/node @types/express
 ---
 
  
-## Endpoints
+## 📮 Endpoints da API
 
-Cadastrar
-Listar
-Atualizar
-Deletar
+| Método | Rota          | Descrição                    |
+| ------ | ------------- | ---------------------------- |
+| POST   | `/livros`     | Cadastrar novo livro         |
+| GET    | `/livros`     | Listar todos os livros       |
+| PUT    | `/livros/:id` | Atualizar um livro existente |
+| DELETE | `/livros/:id` | Remover um livro da coleção  |
+
 
 
 
