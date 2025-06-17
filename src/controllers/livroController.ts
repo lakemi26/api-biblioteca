@@ -10,7 +10,7 @@ export const criarLivro = async (req: Request, res: Response):Promise<void> =>{
         const docRef = await collection.add(novoLivro);
         res.status(201).json({id:docRef.id, ...novoLivro});
     }catch(error){
-        res.status(500).json({error: "Erro ao criar o livro"});
+        res.status(500).json({errorMessage: "Erro ao criar o livro",error});
     }
 };
 
