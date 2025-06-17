@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import livrosRoutes  from "./routes/livros.routes";
+import livrosRoutes from "./routes/livros.routes";
 
 dotenv.config();
 
@@ -13,5 +13,5 @@ app.use("/livros", livrosRoutes);
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-})
+  console.log(`Servidor rodando na porta ${PORT}`);
+});

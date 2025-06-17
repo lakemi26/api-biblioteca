@@ -51,7 +51,7 @@ Gerar o aquivo de configuração para o TypeScript.
 npx tsc --init
 ```
 
-Compilar o arquivo TypeScrip.
+Compilar o arquivo TypeScript.
 ```
 npx tsc
 ```
@@ -59,6 +59,11 @@ npx tsc
 Executar o arquivo gerado com Node.js.
 ```
 node dist/index.js
+```
+
+Para testar o projeto inteiro
+```
+npm run dev
 ```
 ---
 

@@ -1,6 +1,10 @@
 import express from "express";
-import{ atualizarLivro, criarLivro, deletarLivro, listarLivros } from "../controllers/livroController";
-
+import {
+  atualizarLivro,
+  criarLivro,
+  deletarLivro,
+  listarLivros,
+} from "../controllers/livroController";
 
 const router = express.Router();
 
@@ -10,4 +14,3 @@ router.put("/:id", atualizarLivro);
 router.delete("/:id", deletarLivro);
 
 export default router;
-
